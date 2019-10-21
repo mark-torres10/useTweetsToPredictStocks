@@ -1,6 +1,6 @@
 # Using Tweets to Predict Stock Prices
 
-This repository summarizes my progress in creating a web app that uses tweets to predict stock prices. It is still very much a work in progress, but it's a project that I enjoy doing and gives me a great opportunity to improve my programming and data science skills.
+This repository summarizes my progress in creating a web app that uses tweets to predict stock prices. It is still very much a work in progress, but it's a project that I enjoy doing and gives me a great opportunity to improve my programming and data science skills. I am editing and updating this repository as I complete stages of my project
 
 ### 1. Motivation for project:
 
@@ -8,13 +8,33 @@ I know that in the future, I would like to work in the space of data science. I 
 
 ### 2. Implementation:
 
-Currently, I see this project as taking two steps:
+Currently, I see this project as taking two general steps:
 
 ##### 1. Python backend:
 
+1.0: First attempt at Python backend (uploaded):
+
+Currently, I've created a Python script that implements the general framework of what I want my eventual program to accomplish. In essence, this Python script performs the following tasks:
+  • Scrapes tweets about a certain stock
+  • Scrapes prices about the stock (from Yahoo Finance)
+  • Cleans the tweets and analyzes their sentiments (using TextBlob)
+  • Trains a model that predicts the end-of-day stock price of a stock using the stock's sentiment. 
+  
+The uploaded script (predict_stocks_with_tweets.py) implements the above steps, and serves as a first attempt creating the Python backend. 
+
+1.1+: Updated attempts at Python backend (in progress):
+
+I am currently working on updates to the Python backend in order to include additional functionality. Although the current Python functionality is flexible in some ways (e.g., the user can customize the stock and the search dates), it would be improved by including additional functions. These additional functions are summarized below ("Adding functionality to the Python script"). 
+
 ##### 2. Web frontend (HTML/CSS/JS):
 
+1.0: Learning and experimenting with skeleton framework (in progress): 
 
+I would like to combine the Python backend with an interactive frontend. To do so, I am developing my web development skills through courses on Udemy. As I progress in the class, I am modifying the skeleton framework that I envision will eventually become the interactive interface. When this code is completed and functional, it will be uploaded. 
+
+1.1+: Adding additional functionality:
+
+After creating the framework for the user interface, I'm certain that additional functionalities will improve it. For example, I can improve my design skills to create an intuitive interface. Moreover, I can modify the information that I display in order to display certain results that a user might find helpful (e.g., seeing how a stock is moving over time, as well as how the model predicts the stock will move in the future). 
 
 ### 3. Current challenges: 
 
@@ -39,5 +59,5 @@ Currently, I am predicting stock prices purely based on sentiment scores. If our
 
 ### Where I see this project going eventually
 
-Eventually, my goal is 
+Eventually, my goal is to create a fully-functioning web app that allows the user to insert a stock name into a search bar and then outputs a useful result (e.g., predicted stock price). I would like this app to someday become a useful product that I hope others find useful and can build off of. I understand that the functionality of the app wouldn't be unique (presumably, since stock prediction is a lucrative field, someone will have already had an approach similar to mine), but more than anything I see it as a way to develop my data science skills in a way that allows me to make a functional product that I will eventually be proud of having made. 
 
